@@ -35,13 +35,13 @@ const Header: React.FC = () => {
           {/* Navigation Links */}
           <div className="flex items-center space-x-6">
             <Link
-              href="/shop"
+              href="/"
               className="text-sm text-black hover:text-gray-600 font-medium transition-colors"
             >
               Products
             </Link>
             <Link
-              href="/shop/collections"
+              href="/collections"
               className="text-sm text-black hover:text-gray-600 font-medium transition-colors"
             >
               Collections

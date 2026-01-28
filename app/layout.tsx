@@ -1,10 +1,14 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
+import { Providers } from './providers';
+import ShopifyCart from '@/components/shopify/cart-drawer';
+import ShopHeader from '@/components/shopify/shop-header';
+import ShopFooter from '@/components/shopify/shop-footer';
 
 export const metadata: Metadata = {
-  title: 'Frontend',
-  description: 'Start prompting',
+  title: 'Shop | Frontend',
+  description: 'Browse our products',
 };
 
 export default function RootLayout({
@@ -20,7 +24,16 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="m-0 p-0 font-body">{children}</body>
+      <body className="m-0 p-0 font-body">
+        <Providers>
+          <ShopHeader />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <ShopFooter />
+          <ShopifyCart />
+        </Providers>
+      </body>
     </html>
   );
 }

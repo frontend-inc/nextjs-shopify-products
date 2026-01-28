@@ -25,12 +25,6 @@ export default function CollectionsPage() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link href="/shop">Shop</Link>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
               <BreadcrumbPage>Collections</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>

@@ -168,12 +168,6 @@ export default function ProductDetailPage() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link href="/shop">Shop</Link>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
               <BreadcrumbPage>{product.title}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
