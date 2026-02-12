@@ -6,12 +6,7 @@ import ShopifyCart from '@/components/shopify/cart-drawer';
 import ShopHeader from '@/components/shopify/shop-header';
 import ShopFooter from '@/components/shopify/shop-footer';
 
-export const metadata: Metadata = {
-  title: 'Shop | Frontend',
-  description: 'Browse our products',
-};
-
-export default function RootLayout({
+export default function Layout({
   children,
 }: {
   children: React.ReactNode;
