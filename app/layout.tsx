@@ -6,14 +6,19 @@ import ShopifyCart from '@/components/shopify/cart-drawer';
 import ShopHeader from '@/components/shopify/shop-header';
 import ShopFooter from '@/components/shopify/shop-footer';
 
-export default function Layout({
+export const metadata: Metadata = {
+  title: 'Frontend | Shopify',
+  description: 'Frontend Shopify Storefront',
+};
+
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <head />
+      <head></head>
       <body className="m-0 p-0 font-body">
         <Providers>
           <ShopHeader />
