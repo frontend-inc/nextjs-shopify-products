@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useShopifyCart } from '@/hooks/use-shopify-cart';
 import config from '@/lib/config.json';
+import { RiShoppingCartLine } from '@remixicon/react';
 
 const CartIcon: React.FC = () => {
   const { toggleCart, itemCount } = useShopifyCart();
@@ -13,7 +14,7 @@ const CartIcon: React.FC = () => {
       onClick={toggleCart}
       className="relative p-1 text-black hover:text-gray-600 transition-colors"
     >
-      <i className="ri-shopping-cart-line text-xl"></i>
+      <RiShoppingCartLine size={20} />
       {itemCount > 0 && (
         <span className="absolute -top-1 -right-1 bg-black text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center font-semibold">
           {itemCount > 99 ? '99+' : itemCount}
