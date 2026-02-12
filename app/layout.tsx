@@ -5,7 +5,6 @@ import { Providers } from './providers';
 import ShopifyCart from '@/components/shopify/cart-drawer';
 import ShopHeader from '@/components/shopify/shop-header';
 import ShopFooter from '@/components/shopify/shop-footer';
-import Theme from '@/components/Theme';
 
 export const metadata: Metadata = {
   title: 'Shop | Frontend',
@@ -19,13 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-          rel="stylesheet"
-        />
-        <Theme />
-      </head>
+      <head />
       <body className="m-0 p-0 font-body">
         <Providers>
           <ShopHeader />
